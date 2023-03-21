@@ -26,6 +26,7 @@ const subs = intervalo$.subscribe( observer );
 const subs2 = intervalo$.subscribe( observer );
 const subs3 = intervalo$.subscribe( observer );
 
+//El add es una buena forma para desuscribirse de todos los subscribe sin tener que hacer de desusbscribción uno por uno
 subs.add(subs2)
 subs.add(subs3)
 
